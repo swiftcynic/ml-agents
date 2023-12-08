@@ -72,20 +72,8 @@ of our tutorials / guides assume you have access to our example environments).
 the repository if you would like to explore more examples.
 
 ```sh
-git clone --branch release_21 https://github.com/Unity-Technologies/ml-agents.git
+git clone https://github.com/swiftcynic/ml-agents.git
 ```
-
-The `--branch release_21` option will switch to the tag of the latest stable
-release. Omitting that will get the `main` branch which is potentially unstable.
-
-#### Advanced: Local Installation for Development
-
-You will need to clone the repository if you plan to modify or extend the
-ML-Agents Toolkit for your purposes. If you plan to contribute those changes
-back, make sure to clone the `develop` branch (by omitting `--branch release_21`
-from the command above). See our
-[Contributions Guidelines](../com.unity.ml-agents/CONTRIBUTING.md) for more
-information on contributing to the ML-Agents Toolkit.
 
 ### Install the `com.unity.ml-agents` Unity package
 
@@ -166,6 +154,7 @@ run from the command line:
 cd /path/to/ml-agents
 python -m pip install ./ml-agents-envs
 python -m pip install ./ml-agents
+conda install grpcio
 ```
 
 Note that this will install `mlagents` from the cloned repository, _not_ from the PyPi
